@@ -1,0 +1,9 @@
+.about-full {
+  background: #f2f2f2;
+}
+
+@media screen and (max-width: 780px) {
+  .resp {
+    align-items: center !important;
+  }
+}

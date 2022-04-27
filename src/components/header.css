@@ -1,0 +1,29 @@
+.navbar {
+  background: #fff !important;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav li a {
+  color: black !important;
+}
+
+.csimg {
+  height: auto;
+  width: 40px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 780px) {
+  .navbar-nav li a {
+    font-size: 16px !important;
+  }
+  /* .show {
+    display: none;
+  } */
+}

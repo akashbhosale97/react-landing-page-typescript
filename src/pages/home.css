@@ -1,0 +1,16 @@
+.banner__first {
+  padding-top: 65px;
+}
+
+@media screen and (max-width: 780px) {
+  .home__view {
+    justify-content: center !important;
+  }
+  .home__learn {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .banner__first {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,39 @@
+form input,
+textarea {
+  background: #f3f3f3;
+  border: none;
+  outline: none;
+  padding: 20px 0;
+  text-indent: 10px;
+}
+.btnbgcolor {
+  background: #715cdd !important;
+  font-weight: bold;
+}
+.contacttitle {
+  font-size: 40px;
+}
+
+.contactcontent {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 780px) {
+  form input,
+  textarea {
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+  form button {
+    padding: 5px 10px !important;
+    background: #715cdd !important;
+    width: 100%;
+  }
+  .contacttitle {
+    font-size: 22px;
+  }
+
+  .contactcontent {
+    font-size: 18px;
+  }
+}

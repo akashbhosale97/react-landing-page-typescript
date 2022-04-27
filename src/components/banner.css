@@ -1,0 +1,32 @@
+.home {
+  background-color: #715cdd;
+}
+
+.banner_text {
+  color: #715cdd;
+}
+
+.banner_text:hover {
+  color: #715cdd;
+}
+
+.banner_left {
+}
+
+.banner_row {
+  justify-content: space-between !important;
+}
+
+.btn-banner {
+  border: #715cdd !important;
+}
+
+@media screen and (max-width: 780px) {
+  .bannerheading {
+    font-size: 20px !important;
+    font-weight: bold;
+  }
+  .bannercontent {
+    font-size: 18px !important;
+  }
+}

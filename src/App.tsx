@@ -1,28 +1,35 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import axios from "axios";
-import Lists from "./Lists";
+import React, { useEffect } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import { Route, Routes } from "react-router-dom";
+import Blogs from "./pages/Blogs";
+import Blog from "./pages/Blog";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-export interface User {
-  body: string;
-  id?: number;
-  title?: string;
-  userId?: number;
-}
-
-function App() {
-  const [users, setUsers] = useState<User[]>([]);
+const App: React.FC = () => {
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => setUsers(res.data));
-  }, []);
+    AOS.init({
+      duration: 2000,
+    });
+  });
   return (
-    <div>
-      <h1>list of users</h1>
-      <Lists data={users} />
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
